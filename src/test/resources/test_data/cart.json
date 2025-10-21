@@ -1,0 +1,14 @@
+{
+  "id": 1,
+  "userId": 10,
+  "products": [
+    {
+      "id": 1,
+      "title": "Milk",
+      "price": 7,
+      "description": "Whole milk",
+      "category": "Dairy",
+      "image": "https://4f63e3.cdn.akinoncloud.com/products/2024/11/27/87174/31b46d7a-b20b-4d1a-8bb0-014c474e3081_size3840_cropCenter.jpg"
+    }
+  ]
+}

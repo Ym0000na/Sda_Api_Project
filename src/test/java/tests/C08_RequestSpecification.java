@@ -1,7 +1,6 @@
 package tests;
 
-import base_urls.BookersBaseUrl;
-import io.restassured.RestAssured;
+import base_urls.BookerBaseUrl;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
@@ -10,7 +9,7 @@ import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.Matchers.hasSize;
 
 
-public class C08_RequestSpecification  extends BookersBaseUrl {
+public class C08_RequestSpecification  extends BookerBaseUrl {
     /*
             Given https://restful-booker.herokuapp.com/booking
             When User sends get request to the URL

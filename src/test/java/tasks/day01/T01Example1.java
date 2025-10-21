@@ -1,13 +1,13 @@
-package tasks;
+package tasks.day01;
 
-import base_urls.BookersBaseUrl;
+import base_urls.BookerBaseUrl;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
-public class T01Example1 extends BookersBaseUrl {
+public class T01Example1 extends BookerBaseUrl {
 
     /*
     Given

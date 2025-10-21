@@ -1,7 +1,6 @@
-package tasks;
+package tasks.day01;
 
 import base_urls.DummyRestApiBaseUrl;
-import base_urls.JPHBaseUrl;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
