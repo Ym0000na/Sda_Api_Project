@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Book store Suite">
+    <test verbose="2" preserve-order="true"
+          name="Task02.java">
+        <classes>
+            <class name="tasks.day04.Task02">
+                <methods>
+                    <include name="r01createUser"/>
+                    <include name="r02getToken"/>
+                    <include name="r03getBooks"/>
+                    <include name="r04booksToUser"/>
+                    <include name="r05getUserInfo"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

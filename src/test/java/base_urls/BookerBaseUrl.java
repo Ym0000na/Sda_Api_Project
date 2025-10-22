@@ -1,9 +1,12 @@
 package base_urls;
 
+import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.BeforeMethod;
+
+import static io.restassured.RestAssured.given;
 
 public class BookerBaseUrl {
 
@@ -14,7 +17,26 @@ public class BookerBaseUrl {
     public void setSpec(){
         spec = new RequestSpecBuilder()
                 .setBaseUri("https://restful-booker.herokuapp.com")
+                .addHeader("Cookie","token="+getToken())
                 .setContentType(ContentType.JSON)
                 .build();
     }
+
+    String getToken(){
+
+        String credentials = """
+                {
+                    "username" : "admin",
+                    "password" : "password123"
+                }""";
+
+        return given()
+                .body(credentials)
+                .contentType(ContentType.JSON)
+                .post("https://restful-booker.herokuapp.com/auth")
+                .jsonPath()
+                .getString("token");
+
+    }
+
 }

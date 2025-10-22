@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Go Rest Suite">
+    <test verbose="2" preserve-order="true"
+          name="Task01.java">
+        <classes>
+            <class name="tasks.day04.Task01">
+                <methods>
+                    <include name="r01getAllUsers"/>
+                    <include name="r02createUser"/>
+                    <include name="r03getUser"/>
+                    <include name="r04updateUser"/>
+                    <include name="r05partialUpdate"/>
+                    <include name="r06deleteUser"/>
+                    <include name="r07getUserNegative"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
